@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App - Kamil Błąkała - Portfolio #3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,400;0,700;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./dist/css/style.min.css">
+</head>
+
+<body>
+    <div class="weather">
+        <div class="weather__body">
+            <h1 class="weather__body-heading">Weather App</h1>
+            <h2 class="weather__body-city"></h2>
+            <img src="#" alt="Image of current weather" class="weather__body-photo">
+            <p class="weather__body-temp"></p>
+            <div class="weather__body-label">
+                <p>Humidity</p>
+                <p>Wind speed</p>
+            </div>
+            <div class="weather__body-info">
+                <p class="weather__body-hum"></p>
+                <p class="weather__body-wind"></p>
+            </div>
+            <input type="text" placeholder="City name" class="weather__body-input">
+            <p class="weather__body-error"></p>
+            <button class="weather__body-button">Send</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./dist/js/config.min.js"></script>
+    <script src="./dist/js/main.min.js"></script>
+</body>
+
+</html>
