@@ -2,3 +2,6 @@ config.js
 config.min.js
 package-lock.json
 node_modules
+.env
+apikey.js
+apikey.min.js

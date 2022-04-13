@@ -1,13 +1,13 @@
 {
-	"name": "atmix",
+	"name": "weatherapp",
 	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
+	"description": "- [General info](#general-info)\r - [Technologies](#technologies)\r - [Setup](#setup)",
+	"main": "./dist/js/index.min.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"keywords": [],
-	"author": "",
+	"author": "Kamil Błakała",
 	"license": "ISC",
 	"devDependencies": {
 		"@babel/core": "^7.17.5",
@@ -25,5 +25,13 @@
 		"gulp-sourcemaps": "^3.0.0",
 		"gulp-uglify": "^3.0.2",
 		"sass": "^1.49.9"
-	}
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/KamilBlakala/WeatherApp.git"
+	},
+	"bugs": {
+		"url": "https://github.com/KamilBlakala/WeatherApp/issues"
+	},
+	"homepage": "https://github.com/KamilBlakala/WeatherApp#readme"
 }

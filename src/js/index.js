@@ -1,4 +1,4 @@
-const myKey = config.KEY;
+const myKey = 'dda1bf07db8f7840550f2deb9677eecf';
 const LINK = 'https://api.openweathermap.org/data/2.5/weather?q=';
 const KEY = `&appid=${myKey}`;
 const UNITS = '&units=metric';

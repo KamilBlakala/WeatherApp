@@ -1,5 +1,4 @@
 const { src, dest, series, parallel, watch } = require('gulp');
-
 const sass = require('gulp-sass')(require('sass'));
 const cssNano = require('gulp-cssnano');
 const autoprefixer = require('gulp-autoprefixer');
@@ -11,7 +10,6 @@ const sourcemaps = require('gulp-sourcemaps');
 const browserSync = require('browser-sync').create();
 const reload = browserSync.reload;
 const clean = require('gulp-clean');
-const kit = require('gulp-kit');
 
 const paths = {
 	html: './html/**/*.kit',
@@ -50,11 +48,6 @@ function javaScript(done) {
 }
 function convertImages(done) {
 	src(paths.img).pipe(imagemin()).pipe(dest(paths.imgDest));
-	done();
-}
-//FOR MORE PAGES need to add watch and main function - > parallel
-function handleKits(done) {
-	src(paths.html).pipe(kit()).pipe(dest('./'));
 	done();
 }
 function cleanStuff(done) {
