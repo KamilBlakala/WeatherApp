@@ -27,21 +27,21 @@ const getWeather = () => {
 			error.textContent = '';
 			input.value = '';
 			if (weatherId >= 200 && weatherId < 300) {
-				imgWeather.setAttribute('src', '../../dist/img/thunder.png');
+				imgWeather.setAttribute('src', 'dist/img/thunder.png');
 			} else if (weatherId >= 300 && weatherId < 400) {
-				imgWeather.setAttribute('src', '../../dist/img/cloud.png');
+				imgWeather.setAttribute('src', 'dist/img/cloud.png');
 			} else if (weatherId >= 500 && weatherId < 600) {
-				imgWeather.setAttribute('src', '../../dist/img/rain.png');
+				imgWeather.setAttribute('src', 'dist/img/rain.png');
 			} else if (weatherId >= 600 && weatherId < 700) {
-				imgWeather.setAttribute('src', '../../dist/img/ice.png');
+				imgWeather.setAttribute('src', 'dist/img/ice.png');
 			} else if (weatherId >= 700 && weatherId < 800) {
-				imgWeather.setAttribute('src', '../../dist/img/drizzle.png');
+				imgWeather.setAttribute('src', 'dist/img/drizzle.png');
 			} else if (weatherId === 800) {
-				imgWeather.setAttribute('src', '../../dist/img/sun.png');
+				imgWeather.setAttribute('src', 'dist/img/sun.png');
 			} else if (weatherId >= 800 && weatherId < 900) {
-				imgWeather.setAttribute('src', '../../dist/img/sun-cloud.png');
+				imgWeather.setAttribute('src', 'dist/img/sun-cloud.png');
 			} else {
-				imgWeather.setAttribute('src', '../../forecast.png');
+				imgWeather.setAttribute('src', '../forecast.png');
 			}
 		})
 		.catch(() => (error.textContent = 'Please enter a valid city name'));
